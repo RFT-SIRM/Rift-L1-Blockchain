@@ -25,7 +25,7 @@ echo ""
 
 # 5 hours = 21300 seconds
 # Use all available threads
-$BINARY --seconds 18000 --threads $(nproc 2>/dev/null || echo 4)
+$BINARY --seconds 21300 --threads $(nproc 2>/dev/null || echo 4)
 
 RESULT=$?
 
