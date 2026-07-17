@@ -1,7 +1,15 @@
 [package]
-name = "rift_integrated_fuzzer"
+name = "rift-l1-core"
 version = "0.1.0"
 edition = "2021"
+description = "Rift L1 Blockchain - Reality Fractal Theory (RFT) mathematical core"
+license = "MIT"
+authors = ["Eugeny (RFT-SIRM)"]
+repository = "https://github.com/RFT-SIRM/Rift-L1-Blockchain"
+
+[lib]
+name = "rift_l1"
+path = "src/lib.rs"
 
 [[bin]]
 name = "fuzz_integrated"
