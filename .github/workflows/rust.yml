@@ -1,31 +1,26 @@
-name: Real Time Blockchain Fuzzer
+name: Rust
 
 on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
-    inputs:
-      duration_seconds:
-        description: 'Duration in seconds (max ~21600)'
-        required: true
-        default: '21300'
-        type: string
+
+env:
+  CARGO_TERM_COLOR: always
 
 jobs:
-  fuzz:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 360   # 6 часов лимит GitHub
-
     steps:
       - uses: actions/checkout@v4
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Build Release
-        run: cargo build --release --bin fuzz_integrated
+      - name: Build
+        run: cargo build --verbose
 
-      - name: Run Long Stress Fuzzer
-        run: |
-          echo "🚀 Starting fuzzer for ${{ inputs.duration_seconds }} seconds..."
-          ./run_5hour_test.sh   # если скрипт называется иначе — поменяй
-        env:
-          DURATION_SECONDS: ${{ inputs.duration_seconds }}
+      - name: Run tests
+        run: cargo test --verbose
