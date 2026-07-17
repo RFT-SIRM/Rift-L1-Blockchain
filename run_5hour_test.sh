@@ -23,7 +23,7 @@ echo "🚀 Starting 5-hour fuzzing run..."
 echo "   (Press Ctrl+C to stop anytime)"
 echo ""
 
-# 5 hours = 18000 seconds
+# 5 hours = 21300 seconds
 # Use all available threads
 $BINARY --seconds 18000 --threads $(nproc 2>/dev/null || echo 4)
 
