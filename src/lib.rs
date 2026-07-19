@@ -1,6 +1,6 @@
 //! # Rift L1 Core — Reality Fractal Theory (RFT)
 //!
-//! Математическое ядро распределённой системы с гарантированной консистентностью.
+//! Mathematical core for distributed systems with guaranteed consistency.
 
 pub mod core;
 pub mod token;

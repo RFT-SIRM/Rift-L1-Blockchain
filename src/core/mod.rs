@@ -1,4 +1,4 @@
-//! CoreState — ядро системы с SIRM инвариантами
+//! CoreState — system core with SIRM invariants
 
 mod state;
 mod operations;

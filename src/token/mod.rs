@@ -1,4 +1,4 @@
-//! RiftToken — слой токен-экономики
+//! RiftToken — token economics layer
 
 mod rift_token;
 

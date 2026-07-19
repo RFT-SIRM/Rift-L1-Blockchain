@@ -1,1 +1,1 @@
-//! Операции CoreState
+//! CoreState operations

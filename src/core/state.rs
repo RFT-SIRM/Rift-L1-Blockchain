@@ -1,4 +1,4 @@
-//! CoreState структура (извлечено из main.rs)
+//! CoreState structure
 
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Account {

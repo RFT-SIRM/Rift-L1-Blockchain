@@ -1,4 +1,4 @@
-//! RiftTokenState структура
+//! RiftTokenState — token economic layer state
 
 #[derive(Clone, Debug)]
 pub struct RiftTokenState {

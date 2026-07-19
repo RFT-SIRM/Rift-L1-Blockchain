@@ -1,4 +1,4 @@
-//! Типы ошибок и обработка исключений
+//! Error types and error handling
 
 use std::fmt;
 

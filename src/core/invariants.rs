@@ -1,1 +1,1 @@
-//! Проверки SIRM инвариантов
+//! SIRM invariant checks
