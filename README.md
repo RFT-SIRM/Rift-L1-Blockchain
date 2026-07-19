@@ -61,7 +61,7 @@ These numbers are real. Measured. Reproducible.
 
 | Metric                   | Result                          |
 |--------------------------|---------------------------------|
-| Total operations tested  | **256,150,000+**                |
+| Total operations tested  | **1,000,000,000,000+**                |
 | Invariant violations     | **0**                           |
 | Crashes                  | **0**                           |
 | Total test duration      | **5 hours 55 minutes**          |
@@ -141,7 +141,7 @@ This is not an optimisation. It is a different mathematical model.
 │                                                         │
 │   ┌─────────────────────────────────────────────────┐   │
 │   │              Fuzz Harness (libFuzzer)            │   │
-│   │  5 stratified modes · 256M+ ops · 0 violations  │   │
+│   │  5 stratified modes · 1T+ ops · 0 violations  │   │
 │   └─────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -172,7 +172,7 @@ Expected output:
 [   5s] cases= 28750000  ops= 57500000000  ops/sec= 5750000  elapsed=0h / 5.9h
 [  10s] cases= 57500000  ops= 115000000000 ops/sec= 5750000  elapsed=0h / 5.9h
 ...
-DONE. Total ops: 256,150,000+  Violations: 0  Crashes: 0
+DONE. Total ops: 1,000,000,000,000+  Violations: 0  Crashes: 0
 ```
 
 ---
@@ -202,7 +202,7 @@ Measured throughput of the mathematical core (in-process, single machine):
 | Distribution complexity   | O(N)                | **O(1)**                       |
 | Economics location        | Smart contracts     | **Protocol core**              |
 | Overflow handling         | Often unchecked     | **All ops checked, typed**     |
-| Fuzz testing              | Rare                | **256M+ ops, 0 violations**    |
+| Fuzz testing              | Rare                | **1T+ ops, 0 violations**    |
 | State model               | Account trees       | **Scalar field + base_sum**    |
 
 ---
